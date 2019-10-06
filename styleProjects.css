@@ -1,0 +1,400 @@
+/* COLOR PALETTE
+--color1: #f2f8ed;  Light Shades - Background, inverted-color text
+--color2: #d3b99f;  Light Accent - To bring attention/contrast
+--color3: #e3ab77;  Main Brand Color - Main Identity
+--color4: #d1686f;  Dark Accent - Accent Color
+--color5: #271b2f;  Dark Shade - Text Color, inverted-color background
+*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #F2F8ED;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    z-index: 2;
+    background-color: #D3B99F;
+}
+
+.logo {
+    color: #e3ab77;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 16px;
+    margin-left: -10px;
+    text-shadow: 2px 2px #271B2F, 0px 2px #271B2F, 2px 0px #271B2F;
+}
+
+#logo-divider {
+    width: 284px;
+    height: 2px;
+    margin-bottom: 0px;
+    background-color: #271B2F;
+}
+
+/*NAV LINKS STYLES*/
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 55%;
+}.nav-links li {
+    list-style: none;
+}.nav-links a {
+    color: #271B2F;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/*NAV BURGER MENU BUTTON*/
+.burger {
+    display: none;                                  /*Will only display in mobile view*/
+    cursor: pointer;
+    margin-right: 0px;
+}.burger div{
+    width: 30px;
+    height: 3px;
+    background-color: #271B2F;
+    margin: 5px;
+    transition: all 0.3s ease;
+}.toggle #Line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}.toggle #Line2 {
+    opacity: 0;
+}.toggle #Line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.flipcard-holder {
+    padding-top: 15px;
+}.flipcard {
+    position: relative;
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    perspective: 1000px;
+}.flipcard-front-title {                            /*FRONT OF CARD*/
+    font-size: 30px;
+    padding: 5px;
+    background-color: #D3B99F
+}.flipcard-front-image {
+    width: 400px;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+}.flipcard-front-summary {
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    background-color: #e3ab77;   
+    /*WARNING: Remove bg color and text overflows. Try not to go over too much.*/
+}.flipcard-back-title {                             /*BACK OF CARD*/
+    font-size: 30px;
+    padding: 5px;
+    background-color: #D3B99F;
+}.flipcard-inner {                                  /*3D FLIP ON CURSOR*/
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}.flipcard:hover .flipcard-inner {
+    transform: rotateY(180deg);
+}.flipcard-front, .flipcard-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}.flipcard-front {                                  /*FRONT SIDE BACKGROUND*/
+    background-color: #e3ab77;
+    color: #271b2f;
+}.flipcard-back {                                   /*BACK SIDE BACKGROUND*/
+    background-color: #e3ab77;
+    color: #271b2f;
+    transform: rotateY(180deg);
+}.flipcard-buttons {
+    position: relative;
+    margin: auto;
+    text-align: center;
+}.code-button {
+    background-color: #D3B99F;
+    color: #271b2f;
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    border: 3px transparent #e3ab77;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50%;
+    margin-top: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding: 0;
+}.link-button {
+    background-color: #D3B99F;
+    color: #271b2f;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    border: 3px transparent #e3ab77;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50%;
+    margin-top: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding: 0;
+}.learn-button {
+    background-color: #D3B99F;
+    color: #271b2f;
+    font-size: 14px;
+    width: 60px;
+    height: 60px;
+    border: 3px transparent #e3ab77;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50%;
+    margin-top: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding: 0;
+}.code-button:hover {                               /*Halo Effect - Code Button*/
+    box-shadow: 1px 2px 6px 3px #a896b4a1;
+}.link-button:hover {
+    box-shadow: 1px 2px 6px 3px #a896b4a1;
+}.learn-button:hover {
+    box-shadow: 1px 2px 6px 3px #a896b4a1;
+}
+
+/*SCREEN-SIZE DIFFERENCES*/
+@media screen and (max-width: 768px) {              /*MOBILE*/
+    body {
+        overflow-x: hidden;
+    }
+    #helpful-text {
+        margin-top: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #D3B99F;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 27.5%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .nav-active {
+        transform: translateX(0%);
+    }
+    .burger {
+        display: block;
+    }
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+}
+@media screen and (min-width: 768px) {                  /*Screen PC*/
+    .black-bar-border {
+        background-color: #271B2F;
+        height: 4px;
+        width: 100%;
+    }
+    /*NAV POINTER - PC ONLY*/
+    #static-triangle {
+        width: 0px;
+        height: 0px;
+        opacity: 1;
+        margin: auto;
+        position: relative;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 20px solid #271B2F;
+    }
+    #home-nav-pointer-container {
+        padding-top: 0px;
+        margin-left: 10px;
+        width: 40px;
+    }
+    #project-nav-pointer-container {
+        padding-top: 0px;
+        margin-left: 0px;
+        width: 40px;
+    }
+    #interests-nav-pointer-container {
+        padding-top: 0px;
+        margin-left: 30px;
+        width: 40px;
+    }
+    #about-nav-pointer-container {
+        padding-top: 0px;
+        margin-left: 30px;
+        width: 40px;
+    }
+    .triangle {                                         /*Mother and Child Objects*/
+        width: 0px;
+        height: 0px;
+        opacity: 0.75;
+        margin: auto;
+        position: relative;
+        animation: enlarge_1 1s infinite;
+    } .triangle:nth-child(2) {
+        animation: enlarge_3 2s infinite;
+        animation-delay: 0.2s;
+    } .triangle:nth-child(3) {
+        animation: enlarge_4 2s infinite;
+        animation-delay: 0.4s;
+    } .triangle:nth-child(4) {
+        animation: enlarge_4 2s infinite;
+        animation-delay: 0.6s;
+    } .triangle:nth-child(5) {
+        animation: enlarge_4 2s infinite;
+        animation-delay: 0.8s;
+    }
+    @keyframes enlarge_1 {
+        from {
+            opacity: 1;
+            border-left: 2px solid transparent;
+            border-right: 2px solid transparent;
+            border-bottom: 4px solid #90cdf2;
+            margin-top: -4px;
+        } 
+        to {
+            opacity: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 20px solid #90cdf2;
+            margin-top: -20px;
+        }
+    }
+    @keyframes enlarge_2 {
+        from {
+            opacity: 1;
+            border-left: 2px solid transparent;
+            border-right: 2px solid transparent;
+            border-bottom: 4px solid #d390f2;
+            margin-top: -4px;
+        }
+        to {
+            opacity: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 20px solid #d390f2;
+            margin-top: -20px;
+        }
+    }
+    @keyframes enlarge_3 {
+        from {
+            opacity: 1;
+            border-left: 2px solid transparent;
+            border-right: 2px solid transparent;
+            border-bottom: 4px solid #ea9071;
+            margin-top: -4px;
+        }
+        to {
+            opacity: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 20px solid #ea9071;
+            margin-top: -20px;
+        }
+    }
+    @keyframes enlarge_4 {
+        from {
+            opacity: 1;
+            border-left: 2px solid transparent;
+            border-right: 2px solid transparent;
+            border-bottom: 4px solid #f2c390;
+            margin-top: -4px;
+        }
+        to {
+            opacity: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 20px solid #f2c390;
+            margin-top: -20px;
+        }
+    }
+    @keyframes enlarge_5 {
+        from {
+            opacity: 1;
+            border-left: 2px solid transparent;
+            border-right: 2px solid transparent;
+            border-bottom: 4px solid #f5e983;
+            margin-top: -4px;
+        }
+        to {
+            opacity: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 20px solid #f5e983;
+            margin-top: -20px;
+        }
+    }
+    .nav-links {
+        margin-top: 30px;
+    }
+
+    /*Nav Divider*/
+    .nav-divider {
+        height: 20px;
+        width: 2px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4px;
+        margin-left: -3px;
+        background-color: black;
+    }
+}
+@media screen and (min-width: 800px) {                  /*Small Screen PC*/
+    #helpful-text {
+        margin-top: 25px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+@media screen and (min-width: 1400px) {                 /*Medium Screen PC*/
+    #helpful-text {
+        margin-top: 25px;
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+}
+@media screen and (min-width: 1400px) {                 /*Large Screen PC*/
+    /*#helpful-text should be in some type of object*/
+}
