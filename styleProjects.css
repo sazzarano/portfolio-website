@@ -105,6 +105,11 @@ nav {
     font-size: 30px;
     padding: 5px;
     background-color: #D3B99F;
+}.flipcard-back-image {
+    width: 400px;
+    height: 250px;
+    margin: 0;
+    padding: 0;
 }.flipcard-inner {                                  /*3D FLIP ON CURSOR*/
     position: relative;
     width: 100%;
@@ -130,59 +135,23 @@ nav {
     position: relative;
     margin: auto;
     text-align: center;
-}.code-button {
-    background-color: #D3B99F;
+}.flipcard-button {
+    background-color: #5bc0de;
     color: #271b2f;
-    font-size: 24px;
-    width: 60px;
-    height: 60px;
-    border: 3px transparent #e3ab77;
+    border: none;
+    font-size: 30px;
+    width: 75px;
+    height: 50px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    border-radius: 50%;
-    margin-top: 70px;
+    border-radius: 10%;
+    margin-top: 75px;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 10px;
-    padding: 0;
-}.link-button {
-    background-color: #D3B99F;
-    color: #271b2f;
-    font-size: 20px;
-    width: 60px;
-    height: 60px;
-    border: 3px transparent #e3ab77;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 50%;
-    margin-top: 70px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    padding: 0;
-}.learn-button {
-    background-color: #D3B99F;
-    color: #271b2f;
-    font-size: 14px;
-    width: 60px;
-    height: 60px;
-    border: 3px transparent #e3ab77;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 50%;
-    margin-top: 70px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    padding: 0;
-}.code-button:hover {                               /*Halo Effect - Code Button*/
-    box-shadow: 1px 2px 6px 3px #a896b4a1;
-}.link-button:hover {
-    box-shadow: 1px 2px 6px 3px #a896b4a1;
-}.learn-button:hover {
+    padding: 0 0 0 0;
+}.flipcard-button:hover {                               /*Halo Effect - Code Button*/
     box-shadow: 1px 2px 6px 3px #a896b4a1;
 }
 
