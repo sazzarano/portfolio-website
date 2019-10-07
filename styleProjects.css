@@ -155,6 +155,10 @@ nav {
     box-shadow: 1px 2px 6px 3px #a896b4a1;
 }
 
+.subtitle {
+    font-weight: bold;
+}
+
 /*SCREEN-SIZE DIFFERENCES*/
 @media screen and (max-width: 768px) {              /*MOBILE*/
     body {
