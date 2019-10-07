@@ -1,9 +1,9 @@
 /* COLOR PALETTE
---color1: #f2f8ed;  Light Shades - Background, inverted-color text
---color2: #d3b99f;  Light Accent - To bring attention/contrast
---color3: #e3ab77;  Main Brand Color - Main Identity
---color4: #d1686f;  Dark Accent - Accent Color
---color5: #271b2f;  Dark Shade - Text Color, inverted-color background
+color1: #f2f8ed;  Light Shades - Background, inverted-color text
+color2: #d3b99f;  Light Accent - To bring attention/contrast
+color3: #e3ab77;  Main Brand Color - Main Identity
+color4: #d1686f;  Dark Accent - Accent Color
+color5: #271b2f;  Dark Shade - Text Color, inverted-color background
 */
 * {
     margin: 0px;
