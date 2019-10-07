@@ -1,9 +1,9 @@
 /* COLOR PALETTE
-color1: #f2f8ed;  Light Shades - Background, inverted-color text
-color2: #d3b99f;  Light Accent - To bring attention/contrast
-color3: #e3ab77;  Main Brand Color - Main Identity
-color4: #d1686f;  Dark Accent - Accent Color
-color5: #271b2f;  Dark Shade - Text Color, inverted-color background
+--color1: #f2f8ed;  Light Shades - Background, inverted-color text
+--color2: #d3b99f;  Light Accent - To bring attention/contrast
+--color3: #e3ab77;  Main Brand Color - Main Identity
+--color4: #d1686f;  Dark Accent - Accent Color
+--color5: #271b2f;  Dark Shade - Text Color, inverted-color background
 */
 * {
     margin: 0px;
@@ -32,9 +32,7 @@ nav {
     font-size: 16px;
     margin-left: -10px;
     text-shadow: 2px 2px #271B2F, 0px 2px #271B2F, 2px 0px #271B2F;
-}
-
-#logo-divider {
+} #logo-divider {
     width: 284px;
     height: 2px;
     margin-bottom: 0px;
@@ -70,20 +68,18 @@ nav {
     background-color: #271B2F;
     margin: 5px;
     transition: all 0.3s ease;
-}.toggle #Line1 {
+}
+.toggle #Line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
-}.toggle #Line2 {
+}
+.toggle #Line2 {
     opacity: 0;
-}.toggle #Line3 {
+}
+.toggle #Line3 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-.code-logos {
-    margin: auto;
-    width: 50%;
-    padding: 0px;
-    text-align: center;
-}
+
 
 /*SCREEN-SIZE DIFFERENCES*/
 @media screen and (max-width: 768px) { /*MOBILE*/
@@ -135,16 +131,6 @@ nav {
         background-color: #271B2F;
         height: 4px;
         width: 100%;
-    }
-    .home-text {
-        padding-top: 15px;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-bottom: 15px;
-        color: #271B2F;
-        background-color: rgba(255, 255, 255, 0.500);
-        box-shadow: 15px 15px 3px #271B2F;
-        border: 3px groove #eeb988;
     }
     /*NAV POINTER - PC ONLY*/
     #static-triangle {
@@ -293,26 +279,11 @@ nav {
     }
 }
 @media screen and (min-width: 800px) { /*Medium Screen PC*/
-    .home-text {
-        margin-top: 20px;
-        margin-left: 50px;
-        margin-right: 50px;
-        margin-bottom: 30px;
-    }
+    
 }
 @media screen and (min-width: 1200px) { /*Medium Screen PC*/
-    .home-text {
-        margin-top: 20px;
-        margin-left: 150px;
-        margin-right: 150px;
-        margin-bottom: 30px;
-    }
+    
 }
 @media screen and (min-width: 1400px) { /*Large Screen PC*/
-    .home-text {
-        margin-top: 20px;
-        margin-left: 300px;
-        margin-right: 300px;
-        margin-bottom: 30px;
-    }
+    
 }

@@ -46,9 +46,11 @@ nav {
     display: flex;
     justify-content: space-around;
     width: 55%;
-}.nav-links li {
+}
+.nav-links li {
     list-style: none;
-}.nav-links a {
+}
+.nav-links a {
     color: #271B2F;
     text-decoration: none;
     letter-spacing: 3px;
@@ -189,12 +191,6 @@ nav {
     body {
         overflow-x: hidden;
     }
-    #helpful-text {
-        margin-top: 15px;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: 10px;
-    }
     .nav-links {
         position: absolute;
         right: 0px;
@@ -256,7 +252,7 @@ nav {
         margin-left: 0px;
         width: 40px;
     }
-    #interests-nav-pointer-container {
+    #music-nav-pointer-container {
         padding-top: 0px;
         margin-left: 30px;
         width: 40px;
@@ -382,19 +378,11 @@ nav {
     }
 }
 @media screen and (min-width: 800px) {                  /*Small Screen PC*/
-    #helpful-text {
-        margin-top: 25px;
-        margin-left: 100px;
-        margin-right: 100px;
-    }
+    
 }
 @media screen and (min-width: 1400px) {                 /*Medium Screen PC*/
-    #helpful-text {
-        margin-top: 25px;
-        margin-left: 300px;
-        margin-right: 300px;
-    }
+    
 }
 @media screen and (min-width: 1400px) {                 /*Large Screen PC*/
-    /*#helpful-text should be in some type of object*/
+    
 }
