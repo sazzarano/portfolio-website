@@ -107,7 +107,7 @@ nav {
     background-color: #D3B99F;
 }.flipcard-back-image {
     width: 400px;
-    height: 250px;
+    height: 200px;
     margin: 0;
     padding: 0;
 }.flipcard-inner {                                  /*3D FLIP ON CURSOR*/
@@ -131,6 +131,8 @@ nav {
     background-color: #e3ab77;
     color: #271b2f;
     transform: rotateY(180deg);
+}.subtitle {
+    font-weight: bold;
 }.flipcard-buttons {
     position: relative;
     margin: auto;
@@ -153,10 +155,6 @@ nav {
     padding: 0 0 0 0;
 }.flipcard-button:hover {                               /*Halo Effect - Code Button*/
     box-shadow: 1px 2px 6px 3px #a896b4a1;
-}
-
-.subtitle {
-    font-weight: bold;
 }
 
 /*SCREEN-SIZE DIFFERENCES*/
