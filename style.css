@@ -142,9 +142,9 @@ nav {
         padding-right: 15px;
         padding-bottom: 15px;
         color: #271B2F;
-        background-color: rgba(255, 255, 255, 0.500);
-        box-shadow: 15px 15px 3px #271B2F;
-        border: 3px groove #eeb988;
+        background-color: rgba(242, 245, 239, 0.863);
+        box-shadow: 15px 15px 3px rgba(39, 27, 47, 0.76);
+        border: 4px outset;
     }
     /*NAV POINTER - PC ONLY*/
     #static-triangle {
