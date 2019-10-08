@@ -1,10 +1,11 @@
-/* COLOR PALETTE
-color1: #f2f8ed;  Light Shades - Background, inverted-color text
-color2: #d3b99f;  Light Accent - To bring attention/contrast
-color3: #e3ab77;  Main Brand Color - Main Identity
-color4: #d1686f;  Dark Accent - Accent Color
-color5: #271b2f;  Dark Shade - Text Color, inverted-color background
+/*NEW COLOR PALETTE
+#E06150 - Rust
+#FFC58F - Parchment
+#ABD57B - Soft Green
+#449577 - Warn Green
+#32363D - Deep Bluish Black
 */
+
 * {
     margin: 0px;
     padding: 0px;
@@ -13,7 +14,7 @@ color5: #271b2f;  Dark Shade - Text Color, inverted-color background
 }
 
 body {
-    background-color: #F2F8ED;
+    background-color: #abd57b;
     overflow-x: hidden;
 }
 
@@ -23,23 +24,23 @@ nav {
     align-items: center;
     min-height: 8vh;
     z-index: 2;
-    background-color: #D3B99F;
+    background-color: #32363d;
 }
 
 .logo {
-    color: #e3ab77;
+    color: #449577;
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-size: 16px;
+    font-size: 15px;
     margin-left: -10px;
-    text-shadow: 2px 2px #271B2F, 0px 2px #271B2F, 2px 0px #271B2F;
+    text-shadow: 1px 1px #271B2F, 0px 1px #271B2F, 1px 0px #271B2F;
 }
 
 #logo-divider {
     width: 284px;
     height: 2px;
     margin-bottom: 0px;
-    background-color: #271B2F;
+    background-color: #abd57b;
 }
 
 /*NAV LINKS STYLES*/
@@ -52,10 +53,10 @@ nav {
     list-style: none;
 }
 .nav-links a {
-    color: #271B2F;
+    color: #ffc58f;
     text-decoration: none;
     letter-spacing: 3px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     font-size: 18px;
 }
 
@@ -68,14 +69,17 @@ nav {
 .burger div{
     width: 30px;
     height: 3px;
-    background-color: #271B2F;
+    background-color: #E06150;
     margin: 5px;
+    border-radius: 15%;
+    box-shadow: 3px 3px black;
     transition: all 0.3s ease;
 }.toggle #Line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
 }.toggle #Line2 {
     opacity: 0;
 }.toggle #Line3 {
+    box-shadow: none;
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
@@ -84,6 +88,10 @@ nav {
     width: 50%;
     padding: 0px;
     text-align: center;
+}
+
+a {
+    color: #abd57b;
 }
 
 /*SCREEN-SIZE DIFFERENCES*/
@@ -103,7 +111,7 @@ nav {
         height: 92vh;
         top: 8vh;
         z-index: 0;
-        background-color: #D3B99F;
+        background-color: #32363d;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -133,8 +141,8 @@ nav {
 }
 @media screen and (min-width: 768px) { /*Screen PC*/
     .black-bar-border {
-        background-color: #271B2F;
-        height: 4px;
+        background-color: black;
+        height: 5px;
         width: 100%;
     }
     .home-text {
@@ -142,10 +150,10 @@ nav {
         padding-left: 15px;
         padding-right: 15px;
         padding-bottom: 15px;
-        color: #271B2F;
-        background-color: rgba(242, 245, 239, 0.863);
-        box-shadow: 15px 15px 3px rgba(39, 27, 47, 0.76);
-        border: 4px outset;
+        color: #ffc58f;
+        background-color: #32363d;
+        /*box-shadow: 15px 15px 3px #232b1ad2;*/
+        border-radius: 25px;
     }
     /*NAV POINTER - PC ONLY*/
     #static-triangle {
@@ -156,7 +164,7 @@ nav {
         position: relative;
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
-        border-bottom: 20px solid #271B2F;
+        border-bottom: 20px solid black;
     }
     #home-nav-pointer-container {
         padding-top: 0px;
