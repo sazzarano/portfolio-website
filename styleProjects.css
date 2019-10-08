@@ -348,12 +348,17 @@ nav {
         background-color: black;
     }
 }
-@media screen and (min-width: 800px) {                  /*Small Screen PC*/
-    
+@media screen and (min-width: 1200px) {                 /*Medium Screen PC*/
+    .card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 }
-@media screen and (min-width: 1400px) {                 /*Medium Screen PC*/
-    
-}
-@media screen and (min-width: 1400px) {                 /*Large Screen PC*/
-    
+@media screen and (min-width: 1600px) {                 /*Large Screen PC*/
+    .card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 }
