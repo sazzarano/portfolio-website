@@ -6,7 +6,9 @@
 }
 
 body {
-    background-color: #abd57b;
+    background-image: linear-gradient(to top right, #abd57b, #449577);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     overflow-x: hidden;
 }
 
