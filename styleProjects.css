@@ -86,7 +86,7 @@ nav {
 }.flipcard-front-title {                            /*FRONT OF CARD*/
     font-size: 30px;
     padding: 5px;
-    background-color: #D3B99F
+    background-color: #e3ab77
 }.flipcard-front-image {
     width: 400px;
     height: 250px;
@@ -101,7 +101,7 @@ nav {
 }.flipcard-back-title {                             /*BACK OF CARD*/
     font-size: 30px;
     padding: 5px;
-    background-color: #D3B99F;
+    background-color: #e3ab77;
 }.flipcard-back-image {
     width: 400px;
     height: 200px;
