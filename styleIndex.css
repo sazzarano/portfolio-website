@@ -1,0 +1,70 @@
+/*NEW COLOR PALETTE
+#E06150 - Rust
+#FFC58F - Parchment
+#ABD57B - Soft Green
+#449577 - Warn Green
+#32363D - Deep Bluish Black
+*/
+
+a {
+    color: #abd57b;
+}
+
+.code-logos {
+    margin: auto;
+    width: 50%;
+    padding: 0px;
+    text-align: center;
+}
+
+/*SCREEN-SIZE DIFFERENCES*/
+@media screen and (max-width: 768px) { /*MOBILE*/
+    .home-text {
+        padding-top: 25px;
+        padding-left: 10px;
+        padding-right: 100px;
+        padding-bottom: 25px;
+    }
+}
+@media screen and (min-width: 768px) { /*Screen PC*/
+    .home-text {
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        color: #ffc58f;
+        background-color: #32363d;
+        /*box-shadow: 15px 15px 3px #232b1ad2;*/
+        border-radius: 25px;
+    }
+    /*NAV POINTER - PC ONLY*/
+    #home-nav-pointer-container {
+        padding-top: 0px;
+        margin-left: 10px;
+        width: 40px;
+    }
+}
+@media screen and (min-width: 800px) { /*Medium Screen PC*/
+    .home-text {
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (min-width: 1200px) { /*Medium Screen PC*/
+    .home-text {
+        margin-top: 20px;
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (min-width: 1400px) { /*Large Screen PC*/
+    .home-text {
+        margin-top: 20px;
+        margin-left: 300px;
+        margin-right: 300px;
+        margin-bottom: 30px;
+    }
+}

@@ -1,10 +1,10 @@
-/*NEW COLOR PALETTE
+/*MASTERSTYLESHEET - CSS FILE*/
+/* NEW COLOR PALETTE
 #E06150 - Rust
 #FFC58F - Parchment
 #ABD57B - Soft Green
 #449577 - Warn Green
-#32363D - Deep Bluish Black
-*/
+#32363D - Deep Bluish Black */
 
 * {
     margin: 0px;
@@ -14,7 +14,7 @@
 }
 
 body {
-    background-image: linear-gradient(to top right, #abd57b, #449577);
+    background-image: linear-gradient(35deg, #c7f098de, #449577);
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow-x: hidden;
@@ -26,7 +26,7 @@ nav {
     align-items: center;
     min-height: 8vh;
     z-index: 2;
-    background-color: #32363d;
+    background-image: linear-gradient(to right, #32363d, #6363637e);
 }
 
 .logo {
@@ -36,9 +36,7 @@ nav {
     font-size: 15px;
     margin-left: -10px;
     text-shadow: 1px 1px #271B2F, 0px 1px #271B2F, 1px 0px #271B2F;
-}
-
-#logo-divider {
+} #logo-divider {
     width: 284px;
     height: 2px;
     margin-bottom: 0px;
@@ -58,17 +56,15 @@ nav {
     color: #ffc58f;
     text-decoration: none;
     letter-spacing: 3px;
-    /*font-weight: bold;*/
     font-size: 18px;
 }
 
 /*NAV BURGER MENU BUTTON*/
 .burger {
-    display: none; /*Will only display in mobile view*/
+    display: none;                                  /*Will only display in mobile view*/
     cursor: pointer;
     margin-right: 0px;
-}
-.burger div{
+}.burger div{
     width: 30px;
     height: 3px;
     background-color: #E06150;
@@ -77,6 +73,7 @@ nav {
     box-shadow: 3px 3px black;
     transition: all 0.3s ease;
 }.toggle #Line1 {
+    box-shadow: -3px 3px black;
     transform: rotate(-45deg) translate(-5px, 6px);
 }.toggle #Line2 {
     opacity: 0;
@@ -85,28 +82,11 @@ nav {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-a {
-    color: #abd57b;
-}
-
-.code-logos {
-    margin: auto;
-    width: 50%;
-    padding: 0px;
-    text-align: center;
-}
-
-/*SCREEN-SIZE DIFFERENCES*/
 @media screen and (max-width: 768px) { /*MOBILE*/
-    .home-text {
-        padding-top: 25px;
-        padding-left: 10px;
-        padding-right: 100px;
-        padding-bottom: 25px;
+nav {
+        background-image: none;
+        background-color: #32363d;
     }
-    /*body {
-        overflow-x: hidden;
-    }*/
     .nav-links {
         position: absolute;
         right: 0px;
@@ -144,18 +124,8 @@ a {
 @media screen and (min-width: 768px) { /*Screen PC*/
     .black-bar-border {
         background-color: black;
-        height: 5px;
+        height: 4px;
         width: 100%;
-    }
-    .home-text {
-        padding-top: 15px;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-bottom: 15px;
-        color: #ffc58f;
-        background-color: #32363d;
-        /*box-shadow: 15px 15px 3px #232b1ad2;*/
-        border-radius: 25px;
     }
     /*NAV POINTER - PC ONLY*/
     #static-triangle {
@@ -167,26 +137,6 @@ a {
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
         border-bottom: 20px solid black;
-    }
-    #home-nav-pointer-container {
-        padding-top: 0px;
-        margin-left: 10px;
-        width: 40px;
-    }
-    #project-nav-pointer-container {
-        padding-top: 0px;
-        margin-left: 0px;
-        width: 40px;
-    }
-    #interests-nav-pointer-container {
-        padding-top: 0px;
-        margin-left: 30px;
-        width: 40px;
-    }
-    #about-nav-pointer-container {
-        padding-top: 0px;
-        margin-left: 30px;
-        width: 40px;
     }
     .triangle { /*Mother and Child Objects*/
         width: 0px;
@@ -304,26 +254,11 @@ a {
     }
 }
 @media screen and (min-width: 800px) { /*Medium Screen PC*/
-    .home-text {
-        margin-top: 20px;
-        margin-left: 50px;
-        margin-right: 50px;
-        margin-bottom: 30px;
-    }
+    
 }
 @media screen and (min-width: 1200px) { /*Medium Screen PC*/
-    .home-text {
-        margin-top: 20px;
-        margin-left: 150px;
-        margin-right: 150px;
-        margin-bottom: 30px;
-    }
+    
 }
 @media screen and (min-width: 1400px) { /*Large Screen PC*/
-    .home-text {
-        margin-top: 20px;
-        margin-left: 300px;
-        margin-right: 300px;
-        margin-bottom: 30px;
-    }
+    
 }
