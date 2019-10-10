@@ -25,7 +25,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    z-index: 2;
+    z-index: 3;
     background-image: linear-gradient(to right, #32363d, #6363637e);
 }
 
@@ -92,7 +92,7 @@ nav {
         right: 0px;
         height: 92vh;
         top: 8vh;
-        z-index: 0;
+        z-index: 2;
         background-color: #32363d;
         display: flex;
         flex-direction: column;
