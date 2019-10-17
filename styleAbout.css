@@ -6,9 +6,14 @@
 #32363D - Deep Bluish Black
 */
 
+#resume {
+    width: 100vw;
+    height: 100vh;
+}
+
 /*SCREEN-SIZE DIFFERENCES*/
 @media screen and (max-width: 768px) { /*MOBILE*/
-    
+
 }
 @media screen and (min-width: 768px) { /*Screen PC*/
     #about-nav-pointer-container {

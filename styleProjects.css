@@ -68,7 +68,7 @@
     margin: auto;
     text-align: center;
 }.flipcard-button {
-    background-color: #5bc0de;
+    background-color: #E06150;
     color: #271b2f;
     border: none;
     font-size: 30px;
@@ -89,13 +89,18 @@
 
 /*SCREEN-SIZE DIFFERENCES*/
 @media screen and (max-width: 768px) {              /*MOBILE*/
-    
+    #flipcard-website-button {      /*Override website card's button margins*/
+        margin-top: 30px;
+    }
 }
 @media screen and (min-width: 768px) {                  /*Screen PC*/
     #project-nav-pointer-container {
         padding-top: 0px;
         margin-left: 0px;
         width: 40px;
+    }
+    #flipcard-website-button {      /*Override website card's button margins*/
+        margin-top: 30px;
     }
 }
 @media screen and (min-width: 1200px) {                 /*Medium Screen PC*/
@@ -104,11 +109,17 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
+    #flipcard-website-button {      /*Override website card's button margins*/
+        margin-top: 75px;
+    }
 }
 @media screen and (min-width: 1600px) {                 /*Large Screen PC*/
     .card-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+    }
+    #flipcard-website-button {      /*Override website card's button margins*/
+        margin-top: 75px;
     }
 }
