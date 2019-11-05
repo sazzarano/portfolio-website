@@ -6,6 +6,16 @@
 #32363D - Deep Bluish Black
 */
 
+.main {
+    display: grid;
+    grid-template-areas:
+            "resume-section picture-section"
+            "resume-section link-section"
+            "stats-section stats-section";
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: 2fr 2fr 1fr;
+}
+
 #resume {
     width: 100vw;
     height: 100vh;
