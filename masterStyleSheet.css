@@ -82,6 +82,12 @@ nav {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
+@-moz-document url-prefix() {
+    .triangle {
+        display: none;
+    }
+}  
+
 @media screen and (max-width: 768px) { /*MOBILE*/
 nav {
         background-image: none;
@@ -139,6 +145,7 @@ nav {
         border-bottom: 20px solid black;
     }
     .triangle { /*Mother and Child Objects*/
+        
         width: 0px;
         height: 0px;
         opacity: 0.75;
