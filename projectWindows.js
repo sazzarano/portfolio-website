@@ -1,15 +1,20 @@
-const popupWindows = () => {
+const popupButton = document.getElementById("todo-popup-btn");
+const popupWindow = document.getElementById("todo-popup");
+const closeButton = document.getElementsByClassName("popup-close-btn")[0];
 
+popupButton.onclick = () => {
+    console.log("Popup Button has been clicked!")
+    popupWindow.style.display = "block";
 }
 
-popupWindows();
+closeButton.onclick = () => {
+    console.log("Popup Button has been closed!")
+    popupWindow.style.display = "none";
+}
 
 /* 
 PSEUDO CODE HERE
 
-allButtons stores all buttons by class, 
-added event listener for a click, 
-codeWindow will be a variable assignment of pop-up code windows.
 */
 
 /* 
@@ -19,4 +24,9 @@ Each button opens a different project window which displays the html, css
 and js of the project within tab buttons. This can be done via a pdf file or 
 with another method unknown to me. This window can also be closed via the 
 close button on it's corner.
+*/
+
+/*
+RESOURCES
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal2
 */
