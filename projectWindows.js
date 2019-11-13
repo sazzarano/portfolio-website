@@ -12,6 +12,8 @@ closeButton.onclick = () => {
     popupWindow.style.display = "none";
 }
 
+
+
 /* 
 PSEUDO CODE HERE
 
@@ -24,9 +26,4 @@ Each button opens a different project window which displays the html, css
 and js of the project within tab buttons. This can be done via a pdf file or 
 with another method unknown to me. This window can also be closed via the 
 close button on it's corner.
-*/
-
-/*
-RESOURCES
-https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal2
 */

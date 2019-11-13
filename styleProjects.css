@@ -97,15 +97,17 @@
     height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.4);
-} .popup-content {
+} .popup-box {
     background-color: #e3ab77;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #503923;
     width: 80%;
 } .popup-close-btn {
-    color: rgba(224, 97, 80, 0.75);
+    color: rgba(75, 34, 29, 0.75);
     float: right;
+    margin-top: -24px;
+    margin-right: -4px;
     font-size: 28px;
     font-weight: bold;
 }.popup-close-btn:hover,
@@ -113,6 +115,18 @@
     color: rgba(224, 97, 80, 1);
     text-decoration: none;
     cursor: pointer;
+}.tab-holder {
+    /*background-color: lime;
+    border: 1px outset black;*/
+    display: flex;
+    margin-top: -15px;
+}.tab-holder li {
+    background-color: rgba(75, 34, 29, 0.75);
+    border: 0.25px solid black;
+    padding: 0px 10px 0px 10px;
+    color: white;
+    text-decoration: none;
+    list-style: none;
 }
 
 /*SCREEN-SIZE DIFFERENCES*/
