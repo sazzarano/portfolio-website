@@ -7,13 +7,7 @@
 */
 
 .main {
-    display: grid;
-    grid-template-areas:
-            "resume-section picture-section"
-            "resume-section link-section"
-            "stats-section stats-section";
-    grid-template-columns: 5fr 2fr;
-    grid-template-rows: 2fr 2fr 1fr;
+    height: 90vh;
 }
 
 #resume {

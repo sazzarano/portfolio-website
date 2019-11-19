@@ -6,6 +6,30 @@
 #32363D - Deep Bluish Black
 */
 
+.aboutMusic {
+    margin: 10px 85px 10px 85px;
+    padding: 5px 15px 5px 15px;
+    text-align: center;
+    color: #32363D;
+}
+
+.aboutMusic-text {
+    text-align: justify;
+    margin-top: 5px;
+}
+
+.music-container {
+    text-align: center;
+    margin-top: 10px;
+    background-color: #32363D;
+    color: #FFC58F;
+}
+
+.playback-disclaimer {
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
 /*SCREEN-SIZE DIFFERENCES*/
 @media screen and (max-width: 768px) { /*MOBILE*/
 
