@@ -104,11 +104,11 @@
         margin-top: 30px;
     }
 }
-@media screen and (min-width: 1200px) {                 /*Medium Screen PC*/
+@media screen and (min-width: 900px) {                 /*Medium Screen PC*/
     .card-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     }
     #flipcard-website-button {      /*Override website card's button margins*/
         margin-top: 75px;
@@ -118,7 +118,7 @@
     .card-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     }
     #flipcard-website-button {      /*Override website card's button margins*/
         margin-top: 75px;
